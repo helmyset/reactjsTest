@@ -1,13 +1,146 @@
 .border {
   border: 1px;
+  width: 340px;
+  height: 1px;
+  background-color: black;
+  border-color: black;
+  align-self: center;
+  margin-left: 15px;
 }
 
 .image-profile{
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  z-index: 2;
+  left: 90px;
+  top: 25px;
 }
 
 .image-profile-another{
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
+}
+
+.border-detail{
+  border: 1px;
+  width: 285px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: black;
+  border-color: black;
+  align-self: center;
+  margin-left: 1px;
+}
+
+.border-cut{
+  border: 1px;
+  width: 250px;
+  height: 1px;
+  margin-top: 10px;
+  background-color: black;
+  border-color: black;
+  align-self: center;
+  margin-left: 1px;
+}
+
+.button-post{
+  margin-right: 19px;
+  background-color: #2481c9;
+  color: white;
+}
+
+.button-ecv{
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.detail-man-post{
+  font-size: 12px;
+}
+.detail-man-post-name{
+  font-size: 14px;
+  color: black;
+}
+
+.postingan{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tittle-postingan{
+  font-size: 14px;
+}
+
+.source-postingan{
+  font-size: 12px;
+}
+
+.like{
+  margin-top: 1px;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 5px
+}
+
+.border-bottom {
+  border: 1px;
+  width: 420px;
+  height: 1px;
+  background-color: black;
+  border-color: black;
+  align-self: center;
+  margin-left: 1px;
+}
+
+.button-lcs{
+  margin-left: 2px;
+}
+
+.detail-profile{
+  width: auto;
+  height: 420px;
+}
+
+.image-background{
+  width: auto;
+  height: 65px;
+  background-color: green;
+}
+
+.parent{
+  position: relative;
+  z-index: 1;
+}
+
+.detail-name{
+  font-size: 20px;
+}
+.detail-descrip{
+  font-size: 13px;
+}
+.detail-view{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.detail-view-text{
+  font-size: 13px;
+}
+.detail-con{
+  font-size: 20px;
+  margin-top: 10px;
+}
+.detail-con-text{
+  font-size: 13px;
+}
+.detail-access{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.show{
+  width: auto;
+  height: 280px;
 }

@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import Navigation from '../components/Navigation';
 import mockdata from '../mockdata/mockdata';
-import { FaAngleDown, FaCamera, FaVideo, FaEdit, FaInfoCircle } from 'react-icons/fa';
+import { FaAngleDown, FaCamera, FaVideo, FaEdit, FaInfoCircle, FaThumbsUp, FaCommentAlt, FaShare, FaPlus } from 'react-icons/fa';
 import './home.css';
 import image from '../mockdata/images';
  class Home extends Component{
    render(){
      return (
        <div>
-          <Navigation />
           <div className="container">
             <div className="row mt-4">
-              <div className="card col-sm-3 mr-4 detail-profile text-center">
+              <div className="card col-sm-3 detail-profile text-center">
                 <div>
                   <div className="parent">
                     <div className="image-background" ></div>
@@ -74,16 +73,25 @@ import image from '../mockdata/images';
                   </div>
                   <div className="border-bottom"></div>
                   <div className="mb-1 ml-2">
-                    <span className="button-lcs">Like</span>
-                    <span className="button-lcs">Comment</span>
-                    <span className="button-lcs">Share</span>
+                    <span className="button-lcs "><FaThumbsUp className="ml-2"/>Like</span>
+                    <span className="button-lcs ml-2"><FaCommentAlt className="ml-2"/>Comment</span>
+                    <span className="button-lcs ml-2"><FaShare className="ml-2"/>Share</span>
                   </div>
                 </div>
               </div>
-              <div className="card  show col-sm-3 ml-4">
-              <div className="row">
-                <span>add your feed</span>
-                <FaInfoCircle className="ml-auto"/>
+              <div className="card  show col-sm-4">
+              <div className="row mt-2">
+                <span className="ml-2">add your feed</span>
+                <FaInfoCircle className="ml-auto mr-1"/>
+              </div>
+              <div className="row mt-2">
+                <img className="rounded-circle image-profile-another ml-4" src={image[mockdata.photo]}/>
+                <div className="ml-2">
+                  <div className="detail-man-post-name">{mockdata.nama}</div>
+                  <div className="detail-man-post">tittle</div>
+                  <div className="detail-man-post">1d</div>
+                </div>
+                <button className="button-follow"><FaPlus className="icon-follow"/>Follow</button>
               </div>
               <div className="row mt-1">
                 <img className="rounded-circle image-profile-another ml-4" src={image[mockdata.photo]}/>
@@ -92,7 +100,7 @@ import image from '../mockdata/images';
                   <div className="detail-man-post">tittle</div>
                   <div className="detail-man-post">1d</div>
                 </div>
-                <button>Follow</button>
+                <button className="button-follow"><FaPlus className="icon-follow"/>Follow</button>
               </div>
               <div className="row mt-1">
                 <img className="rounded-circle image-profile-another ml-4" src={image[mockdata.photo]}/>
@@ -101,18 +109,9 @@ import image from '../mockdata/images';
                   <div className="detail-man-post">tittle</div>
                   <div className="detail-man-post">1d</div>
                 </div>
-                <button>Follow</button>
+                <button className="button-follow"><FaPlus className="icon-follow"/>Follow</button>
               </div>
-              <div className="row mt-1">
-                <img className="rounded-circle image-profile-another ml-4" src={image[mockdata.photo]}/>
-                <div className="ml-2">
-                  <div className="detail-man-post-name">{mockdata.nama}</div>
-                  <div className="detail-man-post">tittle</div>
-                  <div className="detail-man-post">1d</div>
-                </div>
-                <button>Follow</button>
-              </div>
-                <div>view all recomendation</div>
+                <div className="mt-2">view all recomendation</div>
               </div>
             </div>
           </div>

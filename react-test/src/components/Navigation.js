@@ -6,7 +6,9 @@ import { FaLinkedin, FaHome, FaUserFriends,
 import image from '../mockdata/images';
 import mockdata from '../mockdata/mockdata';
 import './Navigation.css';
-
+import {
+  BrowserRouter as Router} from 'react-router-dom';
+import Profile from '../home/profile/profile';
 class Navigation extends React.Component {
 constructor(props) {
       super(props);
@@ -21,6 +23,7 @@ constructor(props) {
   render(){
     const menuClass = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
     return (
+      <Router>
       <nav className="navbar navbar-expand-lg navbar-light nav-color">
          <div className="collapse navbar-collapse row" id="navbarSupportedContent">
           <form className="form-inline my-2 my-lg-0 ml-5">
@@ -122,13 +125,16 @@ constructor(props) {
                </a>
              </li>
              <li className="nav-item">
-              <a className="nav-link text-white" href="/">
+              <a className="nav-link text-white" href="/profile">
                <img className="rounded-circle image-profile-nav" src={image[mockdata.photo]}/>
                <div>
                Me <FaAngleDown className="icon"/>
                </div>
                </a>
+
              </li>
+
+
              <li className="nav-item">
               <a className="nav-link text-white" href="/">
                 <FaTh className="icon"/>
@@ -141,9 +147,10 @@ constructor(props) {
                <a className="nav-link text-white" href="/">Free Upgrade To Premium</a>
              </li>
            </ul>
-
          </div>
        </nav>
+
+       </Router>
     )
   }
 }

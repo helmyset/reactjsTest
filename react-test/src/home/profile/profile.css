@@ -1,0 +1,22 @@
+.image-profile-p{
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 25px;
+}
+
+.border-profile {
+  border: 1px;
+  width: 646px;
+  height: 1px;
+  background-color: black;
+  border-color: black;
+  align-self: center;
+}
+
+.number-acc{
+  font-size: 50px;
+  color: blue;
+}
